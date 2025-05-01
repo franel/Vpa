@@ -1,0 +1,24 @@
+{
+  "light": {
+    "name": "Light",
+    "mode": "light",
+    "colors": {
+      "primary": "#4f46e5",
+      "background": "#ffffff",
+      "text": "#000000"
+    },
+    "logo": "/modules/thememanager/logo.png",
+    "brand": "App Designer"
+  },
+  "dark": {
+    "name": "Dark",
+    "mode": "dark",
+    "colors": {
+      "primary": "#6366f1",
+      "background": "#111827",
+      "text": "#f9fafb"
+    },
+    "logo": "/modules/thememanager/logo.png",
+    "brand": "App Designer"
+  }
+}
