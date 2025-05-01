@@ -1,11 +1,31 @@
+# Private App Designer - Admin Manual
 
-# Private App Designer
+## Setup
+- Ensure `.env.local` is created (or use Wizard)
+- Deploy to Vercel with proper secrets
 
-Secure AI-powered app builder with MEGA storage, encryption, and auto-prototyping. Modular, scalable, and Vercel deployable.
+## Modules
+- **FlowchartBuilder**: Voice/text flowchart tool, auto-saves to MEGA
+- **PrototypeGenerator**: 3–5 screen UI demo, 7-day expiry
+- **FullAppBuilder**: Cross-platform app builds, config + DALL·E logo
+- **SnapshotManager**: Version diffs, max 50
+- **AuditLog**: 1000 max, encrypted
+- **PluginLoader**: Dynamic plugin support
+- **ThemeManager**: Runtime Tailwind theme + logo switch
 
-## Features
-- Secure admin login (no signup)
-- Lazy-loaded builders and wizards
+## Security
+- JWT-based sessions
 - AES-256 encryption
-- MEGA.nz cloud upload
-- Full dark/light theming
+- 2FA stub in login
+- Auto-logout + purge after 1 year
+
+## Storage
+- Encrypted MEGA file upload
+- Offline fallback via LocalStorage
+- ZIP export for builds/prototypes
+
+## Help
+- “Download Manual” always visible in footer
+
+## Compliance
+- GDPR, CSP, XSS, SQLi protection
